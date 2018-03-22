@@ -1,0 +1,10 @@
+.btn-bar.after, .btn-bar::after {
+    color: red;
+    font-size: 12px;
+}
+.btn-bar:focus, .btn-bar.focus {
+    color: green;
+}
+.btn-bar.active, .btn-bar:active {
+    color: blue;
+}

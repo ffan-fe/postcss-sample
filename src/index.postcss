@@ -1,0 +1,21 @@
+@define-mixin btn $name {
+  $(name) {
+    &.after, &::after {
+      color: red;
+      @mixin-content;
+    }
+
+    &:focus, &.focus {
+      color: green;
+    }
+
+    &.active, &:active {
+      color: blue;
+    }
+
+  }
+}
+
+@mixin btn .btn-bar {
+    font-size: 12px;
+}
